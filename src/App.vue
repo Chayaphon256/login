@@ -1,30 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
+    <p class="h3 my-0 me-md-auto fw-normal">MIDORI-SHOP</p>
+    <nav class="my-2 my-md-0 me-md-3">
+    <router-link to="/" class="p-2 text-dark" > SHOP </router-link>
+    <router-link to='/login' class="p-2 text-dark" > Login </router-link>
+    </nav>
+    <router-link to="/about" class="btn btn-outline-primary">ตระกร้าสินค้า</router-link>
+    </header>
+    <router-view/>
   </div>
-  <router-view />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
